@@ -9,13 +9,13 @@ public class MyArrayComparable<T extends Comparable> {
     private T[] array;
 
     @SuppressWarnings("unchecked")
-    public MyArrayComparable(){
-        array=(T[]) new Object[0];
+    public MyArrayComparable() {
+        array = (T[]) new Comparable[0];
     }
 
     public void add(T element) {
-      array= Arrays.copyOf(array,array.length+1);
-      array[array.length-1]=element;
+        array = Arrays.copyOf(array, array.length + 1);
+        array[array.length - 1] = element;
 
     }
 
@@ -24,11 +24,11 @@ public class MyArrayComparable<T extends Comparable> {
     }
 
     public T smallest() {
-        return Arrays.stream(array).min(Collections.reverseOrder()).orElseThrow(() -> new NoSuchElementException("Array empty"));
+        return Arrays.stream(array).max(Collections.reverseOrder()).orElseThrow(() -> new NoSuchElementException("Array empty"));
     }
 
     @Override
     public String toString() {
-        return "My Array: ";//+array.toString();
+        return "My Array: " + Arrays.toString(array);
     }
 }

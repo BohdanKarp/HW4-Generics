@@ -24,12 +24,12 @@ public class Main {
         System.out.println(myListComparableString.toString());
         System.out.println(myListComparableString.smallest());
         System.out.println(myListComparableString.largest());
-        //MyArrayComparable<Integer>myArrayComparable = new MyArrayComparable<Integer>();
-        //myArrayComparable.add(1);
-        //myArrayComparable.add(2);
-        //myArrayComparable.add(3);
-        //System.out.println(myArrayComparable.toString());
-        //System.out.println(myArrayComparable.smallest());
-        //System.out.println(myArrayComparable.largest());
+        MyArrayComparable<Integer> myArrayComparable = new MyArrayComparable<Integer>();
+        myArrayComparable.add(1);
+        myArrayComparable.add(2);
+        myArrayComparable.add(3);
+        System.out.println(myArrayComparable.toString());
+        System.out.println(myArrayComparable.smallest());
+        System.out.println(myArrayComparable.largest());
     }
 }

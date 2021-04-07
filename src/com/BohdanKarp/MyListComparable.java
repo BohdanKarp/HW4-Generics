@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.NoSuchElementException;
 
 public class MyListComparable<T extends Comparable> {
-    private final List<T> list;
+    private List<T> list;
 
     public MyListComparable() {
         list = new ArrayList<>();
